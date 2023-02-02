@@ -14,3 +14,5 @@
 Запуск игры brain-even
 <a href="https://asciinema.org/a/555979" target="_blank"><img src="https://asciinema.org/a/555979.svg" /></a>
 
+Запуск игры brain-calc
+<a href="https://asciinema.org/a/KUqGZXa6kjWsyEdfdHm56DsSo" target="_blank"><img src="https://asciinema.org/a/KUqGZXa6kjWsyEdfdHm56DsSo.svg" /></a>
