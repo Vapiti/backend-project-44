@@ -3,4 +3,14 @@
 
 <a href="https://codeclimate.com/github/Vapiti/backend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/07937a058a3add0ccb6f/maintainability" /></a>
 
-https://asciinema.org/a/555979?t=26
+Установка для Linux/WSL 2/MacOS:
+
+Установить глобально Node.js версии не ниже 16.10.0
+Скопировать локально данный репозиторий в удобную директорию
+Выполнить установку зависимостей в терминале при помощи команды make install
+Выполнить установку игр при помощи команды npm link
+Запустить интересующую игру, введя название игры (brain-even, brain-calc, brain-gcd, brain-progression, brain-prime)
+
+Запуск игры brain-even
+<a href="https://asciinema.org/a/555979" target="_blank"><img src="https://asciinema.org/a/555979.svg" /></a>
+
