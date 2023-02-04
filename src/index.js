@@ -9,7 +9,8 @@ export const runGame = (rules, round) => {
     
     for (let i = 0; i < 3; i += 1) {
         const [expr, correctAnswer] = round();
-        const input = readlineSync.question(`Question: ${expr} `);
+        console.log(`Question: ${expr} `)
+        const input = readlineSync.question(`Your answer: `);
 
         if (correctAnswer !== input) {
             console.log(`'${input}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
