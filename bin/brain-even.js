@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { greeting, getName, evenGame } from "../src/even-game.js";
+import { greeting, getName, evenGame } from "../src/games/even-game";
 
 greeting();
 const name = getName();
