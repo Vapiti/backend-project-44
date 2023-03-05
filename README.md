@@ -19,3 +19,6 @@
 
 Запуск игры brain-gcd
 <a href="https://asciinema.org/a/558001" target="_blank"><img src="https://asciinema.org/a/558001.svg" /></a>
+
+Запуск игры brain-progression
+<a href="https://asciinema.org/a/564866" target="_blank"><img src="https://asciinema.org/a/564866.svg" /></a>
