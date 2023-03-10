@@ -1,4 +1,4 @@
-import { getRandomNum } from '../randomNum.js';
+import getRandomNum from '../randomNum.js';
 
 export const rules = 'What is the result of the expression?';
 

@@ -1,4 +1,4 @@
-import { getRandomNum } from '../randomNum.js';
+import getRandomNum from '../randomNum.js';
 
 export const rules = 'What number is missing in the progression?';
 
@@ -7,9 +7,9 @@ export const getProg = (base, diff, count) => {
 
   for (let i = 0; progArray.length < count; i += 1) {
     if (i === 0) {
-      progArray.push(base)
+      progArray.push(base);
     } else {
-      progArray.push(progArray[i - 1] + diff)
+      progArray.push(progArray[i - 1] + diff);
     }
   }
   return progArray;

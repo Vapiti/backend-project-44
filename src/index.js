@@ -1,7 +1,7 @@
-import { welcome, getName, greeting } from '../src/welcome.js';
 import readlineSync from 'readline-sync';
+import { welcome, getName, greeting } from './welcome.js';
 
-export const runGame = (rules, round) => {
+const runGame = (rules, round) => {
   welcome();
   const name = getName();
   greeting(name);
@@ -9,8 +9,8 @@ export const runGame = (rules, round) => {
 
   for (let i = 0; i < 3; i += 1) {
     const [expr, correctAnswer] = round();
-    console.log(`Question: ${expr} `)
-    const input = readlineSync.question(`Your answer: `);
+    console.log(`Question: ${expr} `);
+    const input = readlineSync.question('Your answer: ');
 
     if (correctAnswer !== input) {
       console.log(`'${input}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
@@ -23,3 +23,5 @@ export const runGame = (rules, round) => {
 
   console.log(`Congratulations, ${name}!`);
 };
+
+export default runGame;
