@@ -27,7 +27,7 @@ export const evenGame = (userName) => {
             console.log('Correct!');
         } else if (!checkingOne) {
             console.log(`"no" is wrong answer ;(. Correct answer was "yes".\nLet's try again, ${userName}!`);
-            return   
+            return
         } else if (!checkingTwo) {
             console.log(`"yes" is wrong answer ;(. Correct answer was "no".\nLet's try again, ${userName}!`);
             return
