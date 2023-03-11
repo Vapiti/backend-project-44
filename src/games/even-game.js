@@ -3,16 +3,7 @@ import runGame from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const checkEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-
-  if (num % 2 !== 0) {
-    return false;
-  }
-
-};
+const checkEven = (num) => num % 2 === 0;
 
 const questionCorrectAnswer = () => {
   const num = getRandomNum(1, 100);
