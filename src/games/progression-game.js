@@ -25,9 +25,9 @@ const questionCorrectAnswer = () => {
   const diff = getRandomNum(1, 10);
   const count = getRandomNum(9, 10);
   const index = getRandomNum(0, count - 1);
-  const arrayForGame = getProgression(base, diff, count);
-  const question = getExpression(arrayForGame, index);
-  const correctAnswer = arrayForGame[index].toString();
+  const progression = getProgression(base, diff, count);
+  const question = getExpression(progression, index);
+  const correctAnswer = progression[index].toString();
   return [question, correctAnswer];
 };
 
