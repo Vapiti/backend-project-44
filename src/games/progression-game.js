@@ -3,34 +3,21 @@ import runGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
-const getProg = (base, diff, count) => {
-  const progArray = [];
+const getProgression = (base, diff, count) => {
+  const result = [];
 
-  for (let i = 0; progArray.length < count; i += 1) {
-    if (i === 0) {
-      progArray.push(base);
-    } else {
-      progArray.push(progArray[i - 1] + diff);
-    }
+  for (let i = 0; result.length < count; i += 1) {
+    result.push(base + diff * i);
   }
-  return progArray;
+  return result;
 };
 
-const getExpr = (array, index) => {
-  let result = '';
+const getExpression = (array, index) => {
+  let result = array.slice();
 
-  for (let i = 0; i < array.length; i += 1) {
-    if (i > 0) {
-      result += ' ';
-    }
-    if (i === index) {
-      result += '..';
-    } else {
-      result += array[i].toString();
-    }
-  }
+  result[index] = '..';
 
-  return result;
+  return result.join(' ');
 };
 
 const questionCorrectAnswer = () => {
@@ -38,8 +25,8 @@ const questionCorrectAnswer = () => {
   const diff = getRandomNum(1, 10);
   const count = getRandomNum(9, 10);
   const index = getRandomNum(0, count - 1);
-  const arrayForGame = getProg(base, diff, count);
-  const question = getExpr(arrayForGame, index);
+  const arrayForGame = getProgression(base, diff, count);
+  const question = getExpression(arrayForGame, index);
   const correctAnswer = arrayForGame[index].toString();
   return [question, correctAnswer];
 };

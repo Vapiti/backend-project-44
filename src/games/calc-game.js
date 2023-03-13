@@ -6,15 +6,14 @@ const rules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const calc = (a, b, operator) => {
-  let result;
-  if (operator === '+') {
-    result = a + b;
-  } else if (operator === '-') {
-    result = a - b;
-  } else if (operator === '*') {
-    result = a * b;
-  }
-  return result;
+  switch (operator) {
+    case '+':
+      return a + b;
+    case '-':
+      return a - b;
+    default:
+      return a * b;
+  };
 };
 
 const questionCorrectAnswer = () => {

@@ -8,11 +8,7 @@ const checkPrime = (num) => {
     return false;
   }
 
-  if (num === 2) {
-    return true;
-  }
-
-  for (let x = 2; x <= Math.sqrt(num); x += 1) {
+  for (let x = 2, limit = Math.sqrt(num); x <= limit; x += 1) {
     if (num % x === 0) {
       return false;
     }
