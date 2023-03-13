@@ -13,7 +13,7 @@ const getProgression = (base, diff, count) => {
 };
 
 const getExpression = (array, index) => {
-  let result = array.slice();
+  const result = array.slice();
 
   result[index] = '..';
 

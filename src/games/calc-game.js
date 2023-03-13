@@ -13,7 +13,7 @@ const calc = (a, b, operator) => {
       return a - b;
     default:
       return a * b;
-  };
+  }
 };
 
 const questionCorrectAnswer = () => {
